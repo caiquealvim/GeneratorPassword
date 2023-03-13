@@ -97,6 +97,8 @@ const passowrd1 = document.getElementById("senha1");
 const passowrd2 = document.getElementById("senha2");
 
 buttonGenerate.addEventListener("click", function () {
+  passowrd1.innerText = "";
+  passowrd2.innerText = "";
   for (i = 0; i < 13; i++) {
     let radomIndex = Math.floor(Math.random() * characters.length);
     let radomIndex2 = Math.floor(Math.random() * characters.length);
